@@ -73,7 +73,7 @@ This workflow ensures that the **source ROM remains intact**. You can run the pr
 
 ## ℹ️ Known Issues as of 03/18/25
 
-- Inserting a 64x64 sprite into a slot that isn't originally 64x64 will cause the game to crash.
+- Inserting a 64x64 sprite into a sprite that isn't originally 64x64 will cause the game to crash.
 - It’s impossible to work on both LOG2 and Buu's Fury ROMs simultaneously, as the `source_images` folder is shared between both ROMs. This may be changed later, but it's not urgent.
 
 ---
