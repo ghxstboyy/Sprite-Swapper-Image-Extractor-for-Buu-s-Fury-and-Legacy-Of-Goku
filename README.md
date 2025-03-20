@@ -28,8 +28,8 @@ It supports **only** **.bmp** files and reinserts them into the game's ROM.
     ```
     Sprite Swapper/
     ├── source_infos/
-    │   ├── infos_buusfury.json
-    │   └── infos_log2.json
+    │   ├── log2
+    │     ├── infos_log2.json
     └── ...
     ```
 
