@@ -49,16 +49,20 @@ It supports **only** **.bmp** files and reinserts them into the game's ROM.
     │   ├── ... (other modified bmp files)
     └── ...
     ```
-
+    > ℹ️ **Note**: To find the offset from an image extracted with Image Extractor, you just need to look at the filename. The offset is located here: sprite-i_2575-adr_**387ba4**-dim_512(16x32)-avecChunks
+    
 7.  **Running the Software**:
     * Double-click the `Sprite Swapper.exe` file to launch the program.
     * The software will display a console menu allowing you to choose the ROM to modify (**LOG2** or **BUUSFURY**). Use the **arrow keys (up and down)** to select your choice and press **Enter** to confirm.
     * The software will then go through the **.bmp** files in the `source_images` folder, compress them using the `jcalg1.exe` tool (included in the `lib` folder), and automatically reinsert them into a copy of the ROM.
     * During the process, the software will display detailed information in the console, such as processed files, offsets, and operation statuses.
     * A modified copy of the ROM will be generated in a new timestamped folder located in the `export/<game_name>/` folder. The modified ROM file name will also include a timestamp.
-
+    * You will be asked if you want to create an .ips patch that contains the modified data after the insertion of the sprites.
+    * 
     > ℹ️ **Note**: If a `.SAV` (save file) with the same name as the source ROM (e.g., `log2.SAV` or `buusfury.SAV`) is present in the `source_rom/<game_name>/` folder, it will automatically be copied into the export folder and renamed accordingly to match the modified ROM, making it easier to test inserted sprites.
 
+    > ℹ️ **Note**: To be able to share your rom in a **"legal"** way, it is necessary to create an **.ips patch** and share the patch rather than the .gba.
+    
 ## 🧠 **Main Advantage**
 
 This workflow ensures that the **source ROM remains intact**. You can run the program as many times as needed, test different modifications, and always revert to the original ROM. This prevents accidental corruption of the original ROM and maximizes flexibility during repeated modifications. Additionally, using timestamped export folders preserves the history of your changes.
